@@ -1,12 +1,12 @@
-from operacoes import calcula_ICMS,calcula_ISS
+from operacoes import ICMS,ISS
 
 class CalculadorImpostos(object):
     def realiza_calculo(self,orcamento,imposto):
 
         if imposto == 'ISS':
-            imposto_calculado = calcula_ISS(orcamento)
+            imposto_calculado = ISS.calcula(orcamento)
         if imposto == 'ICMS':
-            imposto_calculado = calcula_ICMS(orcamento)
+            imposto_calculado = ICMS.calcula(orcamento)
             
         print(imposto_calculado)
     
